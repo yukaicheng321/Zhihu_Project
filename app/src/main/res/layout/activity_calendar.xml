@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.lenovo.example.zhihu_project.fragment.zhihu.child.CalendarActivity">
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendar"
+        app:mcv_showOtherDates="all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.prolificinteractive.materialcalendarview.MaterialCalendarView>
+
+    <TextView
+        android:text="确定"
+        android:id="@+id/tv_calendar"
+        android:textSize="22sp"
+        android:layout_marginRight="22dp"
+        android:textColor="@color/colorBlack"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

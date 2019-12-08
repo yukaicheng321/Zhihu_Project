@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <com.youth.banner.Banner
+        android:id="@+id/ban_ribao"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"></com.youth.banner.Banner>
+    <TextView
+        android:layout_below="@+id/ban_ribao"
+        android:id="@+id/tv_ribao"
+        android:text="今日热闻"
+        android:background="@color/colorGray"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyc_ribao"
+        android:layout_below="@+id/tv_ribao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+
+        android:layout_gravity="right"
+        android:layout_marginRight="88dp"
+        android:src="@mipmap/ic_fab_calendar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="33dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
